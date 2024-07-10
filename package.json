@@ -109,7 +109,7 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "GENERATE_SOURCEMAP=false craco build",
+    "build": "craco build",
     "codegen": "graphql-codegen --config codegen.yml",
     "test": "craco test",
     "eject": "react-scripts eject",

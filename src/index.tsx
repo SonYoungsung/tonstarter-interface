@@ -20,6 +20,11 @@ import {ApolloProvider} from '@apollo/client';
 import {client} from 'client';
 import {QueryClient, QueryClientProvider} from 'react-query';
 
+/**
+ * Date: 2024-07-01
+ * Build Version: github hosting v0.0.1
+ */
+
 const Web3ProviderNetwork = createWeb3ReactRoot(NetworkContextName);
 const queryClient = new QueryClient();
 
