@@ -1,2 +1,0 @@
-(this["webpackJsonptokamak-ido"]=this["webpackJsonptokamak-ido"]||[]).push([[7],{1763:function(n,o){},1805:function(n,o){},1807:function(n,o){},1820:function(n,o){},1855:function(n,o){}}]);
-//# sourceMappingURL=7.2d555480.chunk.js.map
