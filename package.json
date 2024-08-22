@@ -51,7 +51,6 @@
     "formik": "^2.2.9",
     "fraction.js": "^4.2.0",
     "framer-motion": "^4.1.4",
-    "gh-pages": "^6.1.1",
     "graphql": "^15.5.1",
     "graphql-codegen": "^0.4.0",
     "graphql-request": "^3.5.0",
@@ -157,6 +156,7 @@
     "react-error-overlay": "6.0.9",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
-    "typescript": "^4.2.4"
+    "typescript": "^4.2.4",
+    "gh-pages": "^6.1.1"
   }
 }
