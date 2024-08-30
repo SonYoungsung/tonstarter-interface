@@ -139,18 +139,21 @@ export const Reward = () => {
       }
 
       if (rewardData) {
-        rewardData.map((reward, index) => {
-          reward.index = index + 1;
+        const updatedRewardData = rewardData.map((reward, index) => {
+          console.log(reward);
+          return {...reward, index: index + 1};
         });
 
-        setDatas(rewardData); //adds the index to the rewards data
+        setDatas(updatedRewardData); //adds the index to the rewards data
       }
       if (tokens) {
         setTokensFromAPI(tokens); //save the tokens to local state
       }
       setPoolAddresses(poolArray);
     }
-    fetchProjectsData();
+    fetchProjectsData().catch((e) => {
+      console.log(e);
+    });
   }, [account, library, selected]);
 
   //get all the pool information using the pool addresses array
@@ -230,6 +233,7 @@ export const Reward = () => {
             token1Image: token1Image,
           };
         });
+        console.log('poooools', poooools);
         setPool(poooools);
       }
     };
@@ -494,7 +498,7 @@ export const Reward = () => {
       //will be sent to the manageContainer as props
       const filtered = orderedData.filter(
         (data) =>
-          ethers.utils.getAddress(data.incentiveKey.refundee) ===
+          ethers.utils.getAddress(data?.incentiveKey?.refundee) ===
           ethers.utils.getAddress(account),
       );
       setManageDatas(filtered);
